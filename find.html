@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="find.html">Подбор</a></li>
+                <li><a href="find_pro.html"class="_a">Подбор про</a></li>
+                <li><a href="s.html"class="_a">Ссылки</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    <input type="checkbox" id = 'them'>
+    </header>
+    <main>
+        <nav class="bnav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="find.html">Подбор</a></li>
+                <li><a href="find_pro.html">Подбор про</a></li>
+                <li><a href="s.html">Ссылки</a></li>
+            </ul>
+        </nav> 
+<div class="costdiv">
+    <div class="range-values">
+        <span id="min-price">20000 ₽</span> — <span id="max-price">80000 ₽</span>
+    </div>
+    <div class="range-container">
+        <div class="slider-track"></div>
+        <input type="range" class="cost min-range" min="10000" max="100000" value="20000" step="5000">
+        <input type="range" class="cost max-range" min="10000" max="100000" value="80000" step="5000">
+    </div>
+</div>
+
+    <div class="buttons">
+    <button  id="allfilt">Фильтры</button>
+    </div>
+    <div class="buttons">
+    <select name="bace" class="bace">
+    <option value="">Основное использование</option> 
+    <option value="balans">Баланс</option>
+    <option value="autonomy">Автономность</option>
+    <option value="camers">Камеры</option>
+    <option value="game">Игры</option>
+    <option value="gps">Навигатор</option>
+    </select>
+
+    
+        <button class="filter-btn" data-tag="CN">китайская версия</button>  
+        <button class="filter-btn" data-tag="snap">только дракон</button>
+        <button class="filter-btn" data-tag="fastcharge">быстрая зарядка</button>
+        <button class="filter-btn" data-tag="compact">компакт</button>
+        <button class="filter-btn" data-tag="ip">влагозащита</button>
+        <button class="filter-btn" data-tag="material">материалы</button>
+        <button class="filter-btn" data-tag="scan">ультразвук</button>
+        <button class="filter-btn" data-tag="esim">esim</button>     
+
+
+
+  
+    </div>
+    <h2 class="count"></h2>
+    <div class="block1"></div>
+    
+
+
+    
+    </main>
+    <footer>
+        <div class="findfoot"><p>Цены актуальны для маркетплейсов Росии в апреле 26 года</p></div>
+    </footer>
+
+
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
+
