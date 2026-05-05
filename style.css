@@ -526,8 +526,14 @@ h2 {
     align-items: center;    
     gap: 20px;              
     padding: 15px;
+    width: 100%;
+        overflow-x: hidden; /* Обрезаем всё, что вылезает за пределы контейнера */
+        padding: 0; 
 }
-.phone_card {  
+.phone_card {
+    width: 90vw; /* 90% от ширины видимой части экрана телефона */
+        margin: 10px auto; /* Центрируем принудительно */
+        max-width: none; /* Сбрасываем старые ограничения */
     max-width: 360px;       
     border-radius: 18px;
     display: flex;
