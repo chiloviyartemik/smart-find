@@ -527,8 +527,7 @@ h2 {
     gap: 20px;              
     padding: 15px;
 }
-.phone_card {
-    width: 100%;            
+.phone_card {  
     max-width: 360px;       
     border-radius: 18px;
     display: flex;
