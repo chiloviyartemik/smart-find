@@ -396,7 +396,7 @@ export const phonesData = [
 
     { 
         name: "Vivo x300 pro", 
-        tags: ["snap","ip","CN","material","camers","balans","fastcharge","autonomy","scan","gps","esim"], 
+        tags: ["snap","ip","global","material","camers","balans","fastcharge","autonomy","scan","gps","esim"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1260 x 2800<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 6510 мАч<br>OS: Android 16<br>Вес: 226 г",
         img: "img/vivox300pro.jpg", 
@@ -463,6 +463,7 @@ export const phonesData = [
         price: "64 000₽",
         link: "https://nanoreview.net/en/phone/vivo-iqoo-15-ultra"
     },
+
 
 
 
