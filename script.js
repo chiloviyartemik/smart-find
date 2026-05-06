@@ -1,5 +1,62 @@
 import phonesData from "./phones.js";
 
+// 1. Создаем базу знаний для твоих тегов
+const tagDescriptions = {
+    "snap": "Мощные процессоры Qualcomm для высокой производительности в играх.",
+    "global": "Версия для международного рынка: есть русский язык и поддержка всех частот связи.",
+    "CN": "Версия для Китая. Может не быть некоторых частот 4G/5G и русского языка из коробки.",
+    "fastcharge": "Поддержка быстрой зарядки (обычно от 67W и выше).",
+    "compact": "Смартфоны с небольшой диагональю экрана, удобные для одной руки.",
+    "ip": "Защита от воды и пыли по стандарту IP67 или IP68.",
+    "esim": "Поддержка виртуальной сим-карты (eSIM).",
+    "camers": "Модели с упором на качественную фото и видеосъемку.",
+    "balans": "Лучшее соотношение цены, характеристик и качества софта.",
+    "game": "Игровые модели с мощным охлаждением и высокой герцовкой экрана.",
+    "material":"смартфоны из премиальных материалов",
+    "scan":"ультразвуковой сканер отпечатка пальцев расположен высоко и быстор работает"    
+};
+
+function initHints() {
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    buttons.forEach(btn => {
+        const tag = btn.getAttribute('data-tag');
+        const description = tagDescriptions[tag];
+
+        if (description) {
+            const icon = document.createElement('span');
+            icon.className = 'hint-icon';
+            icon.innerHTML = `? <span class="hint-text">${description}</span>`;
+            
+            let isVisible = false; // Флаг, чтобы не запускать таймер дважды
+
+            icon.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+
+                // Если подсказка уже видна, повторный клик ничего не делает
+                if (isVisible) return; 
+
+                // 1. Показываем
+                icon.classList.add('active');
+                isVisible = true;
+
+                // 2. Жестко удаляем через 10 секунд, что бы ни происходило
+                setTimeout(() => {
+                    icon.classList.remove('active');
+                    isVisible = false;
+                }, 5000);
+            });
+
+            btn.appendChild(icon);
+        }
+    });
+}
+
+initHints();
+
+
+
+
 
 
 
@@ -195,6 +252,15 @@ allbutton.addEventListener("click", function(){
         select.classList.remove("active");
     }
 });
+
+
+
+
+
+
+
+
+
 
 
 
