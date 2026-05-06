@@ -33,6 +33,7 @@ header {
     left: 0;      /* Прижать к левому краю */
     width: 100%;  /* Растянуть на всю ширину экрана */
     z-index: 100; /* Чтобы шапка всегда была поверх остального контента */
+    
 }
 
 li:hover {
@@ -115,8 +116,6 @@ main {
 .bnav.active{
     height: 100%;
     width: 250px;
-    display: flex;
-    justify-content: space-around;
     transition: 0.4s ease;
     transform: translateX(0px); 
     background-color: #1C1C1E;
@@ -148,7 +147,7 @@ main a{
 button{
     height: 50px;
     font-size: 25px;
-    width: 210px;
+    width: 240px;
     color: #f0f0f7;
     background: transparent;
     border: 1px solid #327493; /* Тонкая рамка вместо заливки */
@@ -471,6 +470,79 @@ h2 {
     width: 40%;
 }
 
+/* Контейнер кнопки для позиционирования */
+.filter-btn {
+    position: relative;
+    padding-right: 35px !important; /* Освобождаем место под знак вопроса */
+}
+
+/* Иконка вопроса */
+.hint-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+    transition: 0.3s;
+}
+
+.hint-icon:hover {
+    background: #327493;
+}
+
+/* Сама подсказка */
+.hint-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 180px;
+    background: #1C1C1E;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #327493;
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    z-index: 100;
+    bottom: 130%; /* Показываем над кнопкой */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    font-size: 13px;
+    line-height: 1.4;
+    pointer-events: none; /* Чтобы не мешала кликам */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Треугольник внизу подсказки */
+.hint-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #327493 transparent transparent transparent;
+}
+
+/* Показ при наведении или клике (для мобилок) */
+.hint-icon:hover .hint-text, .hint-icon.active .hint-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hint-icon.active .hint-text {
+    visibility: visible;
+    opacity: 1;
+}
 
 
 
@@ -500,6 +572,10 @@ h2 {
         width: 95%;
     }
 
+    header a{
+        display: none;
+    }
+
     body {
     margin: 0;
     padding: 0;
@@ -526,19 +602,13 @@ h2 {
     align-items: center;    
     gap: 20px;              
     padding: 15px;
-    width: 100%;
-        overflow-x: hidden; /* Обрезаем всё, что вылезает за пределы контейнера */
-        padding: 0; 
 }
-.phone_card {
-    width: 90vw; /* 90% от ширины видимой части экрана телефона */
-        margin: 10px auto; /* Центрируем принудительно */
-        max-width: none; /* Сбрасываем старые ограничения */
-    max-width: 360px;       
+.phone_card {        
+    max-width: 80%;       
     border-radius: 18px;
     display: flex;
     flex-direction: column; 
-    
+    margin: 5px auto;
 }
 
 .phone_img {
@@ -570,4 +640,16 @@ header nav{
 .site_info, .site_info2{
     width: 80%;
 }
+    .block1 {
+        width: 100%;
+        overflow-x: hidden; /* Обрезаем всё, что вылезает за пределы контейнера */
+        padding: 0; 
+    }
+.findfoot{
+    font-size: 22px;
+}    
+
+
+
 }
+
