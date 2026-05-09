@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family:'Pt Sans'; /* шрифты */
+    padding: 0px;
+    margin: 0px; 
+    user-select: none;         /* Убирает возможность выделить текст курсором */
+}
+
+.pt-sans-regular { /* шрифты */
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Растягивает body на всю высоту экрана */
+    margin: 0;
+    /* background: radial-gradient(circle, #acacff, #7878f4); */
+    background-color: #1C1F1F;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Центрирует элементы по вертикали внутри 80px */
+    border-bottom: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    background-color: #1C1C1E;
+    height: 90px;
+    position: fixed;
+    top: 0;       /* Прижать к самому верху */
+    left: 0;      /* Прижать к левому краю */
+    width: 100%;  /* Растянуть на всю ширину экрана */
+    z-index: 100; /* Чтобы шапка всегда была поверх остального контента */
+    
+}
+
+li:hover {
+    /* Цвет фона с прозрачностью 0.1, который НЕ влияет на текст */
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 8px;
+}
+
+header nav{
+    width:80%;
+}
+
+header ul{
+    margin-top: 7px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+header li{
+    list-style: none;
+    transition: 0.3s; /* Чтобы наведение было плавным */
+    border: 2px solid transparent; /* Заранее бронируем место под обводку, чтобы текст не дергался */
+    padding: 10px; /* Отступ внутри, чтобы текст не прилипал к рамке */
+    cursor: pointer;
+}
+
+header a{
+    font-size: 35px;
+    text-decoration: none;
+    color: #f0f0f7;
+
+}
+
+.burger {
+    margin-top: 10px;
+    width: 68px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: space-between; /* Распределяем линии равномерно */
+    position: relative;
+}
+
+.burger span {
+    background-color: #f0f0f7;
+    height: 8px;
+    width: 100%;
+    transition: 0.3s ease; /* Добавляем плавность */
+    transform-origin: center; /* Вращаем относительно центра */
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(22px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-22px) rotate(-45deg);
+}
+
+main {
+    padding-top: 90px;
+
+    flex: 1; /* Этот блок заберет всё свободное место, прижав футер вниз */
+    
+}
+
+
+.bnav{
+    position: fixed;
+    transform: translateX(-290px);    
+    z-index: 100;
+}
+
+.bnav.active{
+    height: 100%;
+    width: 250px;
+    transition: 0.4s ease;
+    transform: translateX(0px); 
+    background-color: #1C1C1E;
+    position: fixed;
+    z-index: 100;
+    border-right: 1px solid #327493; /* Тонкая рамка вместо заливки */
+}
+
+main ul{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+main li{
+    height: 60px;
+       list-style: none; 
+}
+
+main a{
+    font-size: 35px;
+    text-decoration: none;
+    color: #f0f0f7;
+}
+
+.first_text{
+    font-size: 40px;
+}
+
+button{
+    height: 50px;
+    font-size: 25px;
+    width: 240px;
+    color: #f0f0f7;
+    background: transparent;
+    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    text-decoration: none;
+    outline: none;
+    border-radius: 18px ;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #f0f0f7;
+    color: #415f91;
+    border-color: #415f91;
+}
+
+button:hover {
+    background-color: #327493;
+    color: white;
+    transition: 0.3s; /* Плавный переход */
+}
+
+
+select {
+    width: 100%; /* На мобилках лучше 100%, на ПК можно ограничить */
+    max-width: 900px; 
+    height: 50px;
+    color: #f0f0f7;
+    background: transparent;
+    font-size: 25px;
+    border: 1px solid #327493;
+    border-radius: 18px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    appearance: none;
+    padding: 0 15px;
+}
+
+.bace option {
+    background-color: #1C1C1E;
+    color: #f0f0f7;
+}
+
+/* ДВОЙНОЙ ПОЛЗУНОК */
+.range-container {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+input[type="range"].cost {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    pointer-events: none; /* Клики проходят сквозь пустую область */
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/* Кругляшок (Thumb) */
+input[type="range"].cost::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #f0f0f7;
+    cursor: pointer;
+    pointer-events: auto; /* Кликабелен только сам кружок */
+    box-shadow: 0 0 10px rgba(50, 116, 147, 0.5);
+    border: none;
+}
+
+/* Дорожка */
+.slider-track {
+    width: 100%;
+    height: 5px;
+    background: #327493;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.range-values {
+    color: #f0f0f7;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+select:hover{
+    filter: brightness(1.2); /* Легкое осветление при наведении */
+}
+
+option:hover{
+  background-color: blue;
+  cursor: pointer;
+}
+
+.price{
+font-size: 35px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;    /* Позволяет кнопкам перепрыгивать на новую строку */
+    justify-content: center;
+    gap: 12px;          
+    padding: 20px;
+    max-width: 900px;   
+    margin: 0 auto;     
+}
+
+
+.phone_card {
+    display: flex;         /* Выстраивает картинку и инфо-блок в ряд */
+    gap: 20px;             /* Расстояние между картинкой и текстом */
+    background: #fff;
+    padding: 15px;
+    border-radius: 18px;
+    margin-bottom: 15px; 
+    max-width: 1100px;       /*  эти 2 свойства в комбенации уберают края */
+    margin: 15px auto;           /*  эти 2 свойства в комбенации уберают края */
+    color: #f0f0f7;
+    /* background-color: #415f91; */    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    font-size: 25px;
+    animation: fadeIn 0.5s ease forwards; 
+    background-color: transparent;
+}
+
+.startfind{
+    background-color:#327493;
+    width: 400px;
+    max-width: 95%;
+    margin: 20px auto;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #f0f0f7;
+    align-items: center;   
+    font-size: 30px; 
+
+    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+}
+
+.site_info2{
+    margin: 150px auto;
+}
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.phone_img {
+    max-width: 600px;          /* Фиксируем ширину картинки */
+    max-height: 550px;
+    border-radius: 18px;
+}
+
+.phone_info {
+    display: flex;
+    flex-direction: column; /* Внутри этого блока всё идет сверху вниз */
+    gap: 10px;             /* Расстояние между H3 и будущим текстом */
+}
+
+.phone_info h3 {
+    margin: 0;             /* Убираем лишние отступы у заголовка */
+    font-size: 30px;
+}
+
+.count{
+    font-size: 30px;
+    color: #f0f0f7;
+    background-color: #327493;
+    width: 225px;
+    margin: auto;
+    text-align: center;
+    border-radius: 18px;
+    height: auto;
+        background: transparent;
+    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+}
+
+.costdiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: #327493;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 18px;
+        background: transparent;
+    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+}
+
+.cost{
+background-color: #1C1C1E;
+    color: #f0f0f7;
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: #327493; /* Тонкая рамка вместо заливки */
+}
+
+.costspan{
+    margin: auto;
+    color: #f0f0f7;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.site_info, .site_info2 {
+    width: 1000px;
+    max-width: 95%; 
+    margin: 20px auto;
+    padding: 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    color: #f0f0f7;
+    background: rgba(255, 255, 255, 0.03); /* Почти прозрачный фон */
+    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    border-radius: 18px;
+}
+
+
+h1, h2{
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 45px; 
+    color: #f0f0f7; 
+}
+
+h2 { 
+    font-size: 30px; 
+    padding-bottom: 10px; 
+}
+
+.how {
+    font-size: 26px; 
+    margin: 10px;
+    text-align: left;
+    color: #d0d0d8;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+
+}
+
+.form input,textarea{
+    border-radius: 18px;
+    width: 40%;
+    height: 100px;
+    font-size: 30px;        
+    text-align: center;
+}
+
+.formbutton{
+    border-radius: 18px;
+    width: 40%;
+    height: 100px;
+    font-size: 30px;        
+    text-align: center;
+}
+
+.findfoot{
+    font-size: 30px;
+    color: #f0f0f7;
+    background-color:#3B527F;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: auto;
+         border-top: 1px solid #327493; /* Тонкая рамка вместо заливки */    
+        background-color: #1C1C1E;
+}
+
+.formlbl{
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    color:#f0f0f7;
+    background: rgba(255, 255, 255, 0.03); /* Почти прозрачный фон */
+    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    border-radius: 18px;
+}
+
+.description{
+    color: #d0d0d8;
+}
+
+.sendbutton{
+    width: 40%;
+}
+
+/* Контейнер кнопки для позиционирования */
+.filter-btn {
+    position: relative;
+    padding-right: 35px !important; /* Освобождаем место под знак вопроса */
+}
+
+/* Иконка вопроса */
+.hint-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+    transition: 0.3s;
+}
+
+.hint-icon:hover {
+    background: #327493;
+}
+
+/* Сама подсказка */
+.hint-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 180px;
+    background: #1C1C1E;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #327493;
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    z-index: 100;
+    bottom: 130%; /* Показываем над кнопкой */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+    font-size: 13px;
+    line-height: 1.4;
+    pointer-events: none; /* Чтобы не мешала кликам */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Треугольник внизу подсказки */
+.hint-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #327493 transparent transparent transparent;
+}
+
+/* Показ при наведении или клике (для мобилок) */
+.hint-icon:hover .hint-text, .hint-icon.active .hint-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hint-icon.active .hint-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    ._a{
+        display: none;
+    }
+    .costdiv{
+        width: 95%;
+    }
+
+    header a{
+        display: none;
+    }
+
+    body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Запрещаем боковую прокрутку */
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.bnav.active{
+    width: 100%;
+}
+
+.at{
+    margin-bottom: 15px;
+    font-size: 40px;
+    width: 100%;
+}
+
+.formlbl{
+    width: 90%;
+}
+
+.formbutton{
+    width: 90%;
+}
+
+.startfind{
+    width: 80%;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;              
+    padding: 15px;
+}
+.phone_card {        
+    max-width: 80%;       
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column; 
+    margin: 5px auto;
+}
+
+.phone_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;      /* Картинка заполняет верхнюю часть */
+}
+
+.phone_info {
+    padding: 15px;
+}
+
+header nav{
+    width:60%;
+}
+.phone_info h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.filter-btn {
+    padding: 12px 20px;
+    font-size: 24px;
+    border-radius: 18px;
+    margin: 5px;
+}
+.form input, button, textarea{
+    width: 90%;
+}
+.site_info, .site_info2{
+    width: 80%;
+}
+    .block1 {
+        width: 100%;
+        overflow-x: hidden; /* Обрезаем всё, что вылезает за пределы контейнера */
+        padding: 0; 
+    }
+.findfoot{
+    font-size: 22px;
+}    
+    .hint-text {
+        /* 1. Сбрасываем центрирование */
+        left: auto !important; 
+        transform: none !important; 
+
+        /* 2. Прижимаем правый край подсказки к правому краю иконки */
+        right: 0 !important; 
+        
+        /* 3. Ограничиваем ширину, чтобы она не была шире экрана */
+        width: 80vw; 
+        max-width: 280px;
+
+        /* 4. Немного отступаем от верха */
+        bottom: 150%; 
+    }
+
+    /* 5. Поправляем хвостик (треугольник), чтобы он был под вопросиком */
+    .hint-text::after {
+        left: auto !important;
+        right: 5px !important; /* Смещаем вправо к иконке */
+        margin-left: 0 !important;
+    }
+
+
+}
