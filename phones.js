@@ -22,7 +22,7 @@ export const phonesData = [
     },  
 
     {  
-        name: "OnePlus 13jawh", 
+        name: "OnePlus 13", 
         tags: ["balans", "autonomy", "50", "game", "snap", "fastcharge", "material", "ip", "scan", "global", "esim","gps"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.82 AMOLED - 1440 x 3168<br>Чип: Qualcomm Snapdragon 8 Elite<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 6000 мАч<br>OS: Android 16<br>Вес: 213 г",
@@ -158,7 +158,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1272 x 2772<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 7300 мАч<br>OS: Android 16<br>Вес: 211",
         img: "img/OnePlus15.png", 
-        price: "50 000₽",
+        price: "54 000₽",
         link: "https://nanoreview.net/ru/phone/oneplus-15"
     },
 
@@ -168,7 +168,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.9 AMOLED - 1200 x 2608<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 6500 мАч<br>OS: Android 16<br>Вес: 218",
         img: "img/POCOF8Ultra.jpg", 
-        price: "42 000₽",
+        price: "46 000₽",
         link: "https://nanoreview.net/ru/phone/xiaomi-poco-f8-ultra"
     },
     
@@ -198,7 +198,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.3 AMOLED - 1220 x 2656<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 6330 мАч<br>OS: Android 16<br>Вес: 191",
         img: "img/Xiaomi 17.jpg", 
-        price: "52 000₽",
+        price: "56 000₽",
         link: "https://nanoreview.net/ru/phone/xiaomi-17"
     },
 
@@ -229,7 +229,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1264 x 2780<br>Чип: MediaTek Dimensity 9400e<br>Камера: 3 (50 MP + 50 MP + 8 MP)<br>Батарея: 7000 мАч<br>OS: Android 15<br>Вес: 206",
         img: "img/realmegt7.jpg", 
-        price: "30 000₽",
+        price: "28 000₽",
         link: "https://nanoreview.net/ru/phone/realme-gt-7"
     },
     
@@ -399,7 +399,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.71 OLED - 1256 x 2808<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 7200 мАч<br>OS: Android 16<br>Вес: 219 г",
         img: "img/magic8pro.jpg", 
-        price: "70 000₽",
+        price: "65 000₽",
         link: "https://nanoreview.net/ru/phone/honor-magic-8-pro"
     },
 
@@ -529,16 +529,70 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.82 AMOLED - 1440 x 3168<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 4 (200 MP + 200 MP + 50 MP + 50 MP)<br>Батарея: 7050 мАч<br>OS: Android 16<br>Вес: 235 г",
         img: "img/q93_d9405b0e08acb169d2643eab218c77a2425d105681066b81886648a354dca7ea.png", 
-        price: "90 000₽",
+        price: "87 000₽",
         link: "https://nanoreview.net/ru/phone/oppo-find-x9-ultra",
         data: "Апрель 2026 года"
     },
 
+    { 
+        name: "Oppo find x9s pro CN", 
+        tags: ["ip","CN","material","camers","balans","fastcharge","autonomy","scan","compact"], 
+        desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
+        characteristics: "Дисплей: 6.32 AMOLED - 1216 x 2640<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (200 MP + 200 MP + 50 MP)<br>Батарея: 7025 мАч<br>OS: Android 16<br>Вес: 198 г",
+        img: "img/oppo9spro.jpg", 
+        price: "51000₽",
+        link: "https://nanoreview.net/ru/phone/oppo-find-x9s-pro"
+    },
 
+    { 
+        name: "Motorola moto g100 pro CN", 
+        tags: ["fastcharge","ip","balans","esim","CN"], 
+        desc: "Съемные панели, аксессуары на винтах и легкая Nothing OS. Самый самобытный бюджетник с акцентом на дизайн", 
+        characteristics: "Дисплей: 6.7 POLED - 1220 x 2712<br>Чип: MediaTek Dimensity 7300<br>Камера: 2 шт (Основная 50 МП & 8 МП + фронтальная 32 МП)<br>Батарея: 6720 мАч<br>OS: Android 15<br>Вес: 198 г",
+        img: "img/motog100pro.jpg", 
+        price: "14000₽",
+        link: "https://e-katalog.com.ru/cellphones/MOTOROLA-MOTO-G100-PRO-512GB/specifications/"
+    },
 
+    { 
+        name: "Motorola moto g55", 
+        tags: ["fastcharge","snap","ip","balans","esim","global","gps"], 
+        desc: "Съемные панели, аксессуары на винтах и легкая Nothing OS. Самый самобытный бюджетник с акцентом на дизайн", 
+        characteristics: "Дисплей: 6.49 IPS LCD - 1080 x 2400<br>Чип: MediaTek Dimensity 7025<br>Камера: 2 (50 MP + 8 MP)<br>Батарея: 5000 мАч<br>OS: Android 15<br>Вес: 182 г",
+        img: "img/moto-g55.jpg", 
+        price: "10000₽",
+        link: "https://nanoreview.net/ru/phone/motorola-moto-g55"
+    },     
 
+    { 
+        name: "Nothing phone 3", 
+        tags: ["balans","fastcharge","ip","global","game","snap","esim","gps","material"], 
+        desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
+        characteristics: "Дисплей: 6.67 AMOLED - 1260 x 2800<br>Чип: Qualcomm Snapdragon 8s Gen 4<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 5150 мАч<br>OS: Android 16<br>Вес: 218 г",
+        img: "img/nothing_3.jpg", 
+        price: "33 000₽",
+        link: "https://nanoreview.net/ru/phone/nothing-phone-3"
+    },
 
-
+    { 
+        name: "Motorola moto g55", 
+        tags: ["fastcharge","ip","balans","global","gps"], 
+        desc: "Съемные панели, аксессуары на винтах и легкая Nothing OS. Самый самобытный бюджетник с акцентом на дизайн", 
+        characteristics: "Дисплей: 6.77 AMOLED - 1080 x 2392<br>Чип: MediaTek Dimensity 7300 Pro<br>Камера: 3 (50 MP + 8 MP + 2 MP)<br>Батарея: 5000 мАч<br>OS: Android 15<br>Вес: 199 г",
+        img: "img/nothing-phone-3a-lite.jpg", 
+        price: "14000₽",
+        link: "https://nanoreview.net/ru/phone/nothing-phone-3a-lite"
+    },  
+    
+    { 
+        name: "Oneplus nord 6", 
+        tags: ["balans", "autonomy","game", "snap", "fastcharge","ip","global","gps","esim"], 
+        desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
+        characteristics: "Дисплей: 6.78 AMOLED - 1272 x 2772<br>Чип: Qualcomm Snapdragon 8s Gen 4<br>Камера: 2 (50 MP + 8 MP)<br>Батарея: 7500 мАч<br>OS: Android 16<br>Вес: 210 г",
+        img: "img/nord_6.jpg", 
+        price: "28 000₽",
+        link: "https://nanoreview.net/ru/phone/oneplus-nord-6"
+    }, 
 
 
 
