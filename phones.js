@@ -42,7 +42,7 @@ export const phonesData = [
     },
 
     {  
-        name: "Realme gt 8 CN", 
+        name: "Realmegt8 CN", 
         tags: ["snap", "30", "fastcharge", "game", "ip","balans","autonomy","CN",], 
         desc: " Максимальный FPS, Snapdragon последнего поколения и зарядка до 40% за 15 минут. Лучший выбор для тяжелых игр",
         characteristics: "Дисплей: 6.79 OLED - 1440 x 3136<br>Чип: Qualcomm Snapdragon 8 Elite<br>Камера: 3 (50 MP + 50 MP + 8 MP)<br>Батарея: 7000 мАч<br>OS: Android 16<br>Вес: 209 г", 
@@ -575,7 +575,7 @@ export const phonesData = [
     },
 
     { 
-        name: "Motorola moto g55", 
+        name: "Nothing phone 3a lite", 
         tags: ["fastcharge","ip","balans","global","gps"], 
         desc: "Съемные панели, аксессуары на винтах и легкая Nothing OS. Самый самобытный бюджетник с акцентом на дизайн", 
         characteristics: "Дисплей: 6.77 AMOLED - 1080 x 2392<br>Чип: MediaTek Dimensity 7300 Pro<br>Камера: 3 (50 MP + 8 MP + 2 MP)<br>Батарея: 5000 мАч<br>OS: Android 15<br>Вес: 199 г",
