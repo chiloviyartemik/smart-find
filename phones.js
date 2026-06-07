@@ -22,7 +22,7 @@ export const phonesData = [
     },  
 
     {  
-        name: "OnePlus 13", 
+        name: "OnePlus 13jawh", 
         tags: ["balans", "autonomy", "50", "game", "snap", "fastcharge", "material", "ip", "scan", "global", "esim","gps"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.82 AMOLED - 1440 x 3168<br>Чип: Qualcomm Snapdragon 8 Elite<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 6000 мАч<br>OS: Android 16<br>Вес: 213 г",
