@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+            <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="find.html">Подбор</a></li>
+            </ul>
+        </nav>
+    <input type="checkbox" id = 'them'>
+    </header>
+    <main>
+        <nav class="bnav">
+            <ul>
+                <li><a href="index.html" class="at">Главная</a></li>
+                <li><a href="find.html" class="at">Подбор</a></li>
+            </ul>
+        </nav>
+        <div class="bnavf">
+            <label><input class="sortimp" type="radio" name="sort" id="DOWN">По убыванию</label>
+            <label><input class="sortimp" type="radio" name="sort" id="UP">По возрастанию</label>
+
+        </div>
+
+
+<div class="costdiv">
+    <div class="range-values">
+        <span id="min-price">20000 ₽</span> — <span id="max-price">80000 ₽</span>
+    </div>
+    <div class="range-container">
+        <div class="slider-track"></div>
+        <input type="range" class="cost min-range" min="10000" max="100000" value="20000" step="5000">
+        <input type="range" class="cost max-range" min="10000" max="100000" value="80000" step="5000">
+    </div>
+</div>
+
+    <div class="filtdiv">
+    <button  id="allfilt">Убрать кнопки</button>
+    <button class="filter">
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://w3.org">
+    <!-- Верхний ползунок (линия поднята на уровень Y=5) -->
+    <path d="M2 5H8M26 5H12M8 2V8M12 2V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Средний ползунок (ровно по центру на уровне Y=14) -->
+    <path d="M2 14H18M26 14H22M18 11V17M22 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Нижний ползунок (линия опущена на уровень Y=23) -->
+    <path d="M2 23H10M26 23H14M10 20V26M14 20V26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
+
+    </button>
+    </div>
+    <div class="buttons">
+    <select name="bace" class="bace">
+    <option value="">Основное использование</option> 
+    <option value="balans">Баланс</option>
+    <option value="autonomy">Автономность</option>
+    <option value="camers">Камеры</option>
+    <option value="game">Игры</option>
+    <option value="gps">Навигатор</option>
+    </select>
+
+    
+        <button class="filter-btn" data-tag="CN">китайская версия</button>  
+        <button class="filter-btn" data-tag="fastcharge">быстрая зарядка</button>
+        <button class="filter-btn" data-tag="compact">компакт</button>
+        <button class="filter-btn" data-tag="ip">влагозащита</button>
+        <button class="filter-btn" data-tag="material">материалы</button>
+        <button class="filter-btn" data-tag="scan">ультразвук</button>
+        <button class="filter-btn" data-tag="esim">esim</button>     
+        <button class="filter-btn" data-tag="snap">snapdragon</button>
+
+
+
+  
+    </div>
+    <h2 class="count"></h2>
+    <div class="block1"></div>
+    
+
+
+    
+    </main>
+    <footer>
+        <div class="findfoot"><p>Цены актуальны для маркетплейсов России в апреле 26 года</p></div>
+    </footer>
+
+
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
+
