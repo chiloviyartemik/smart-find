@@ -42,11 +42,11 @@ export const phonesData = [
     },
 
     {  
-        name: "Realmegt8 CN", 
+        name: "Realme gt 8 CN", 
         tags: ["snap", "30", "fastcharge", "game", "ip","balans","autonomy","CN",], 
         desc: " Максимальный FPS, Snapdragon последнего поколения и зарядка до 40% за 15 минут. Лучший выбор для тяжелых игр",
         characteristics: "Дисплей: 6.79 OLED - 1440 x 3136<br>Чип: Qualcomm Snapdragon 8 Elite<br>Камера: 3 (50 MP + 50 MP + 8 MP)<br>Батарея: 7000 мАч<br>OS: Android 16<br>Вес: 209 г", 
-        img: "img/realme gt 8.png", 
+        img: "img/realmegt8.png", 
         price: "30000₽",
         link: "https://nanoreview.net/ru/phone/realme-gt-8-china"
 
@@ -104,7 +104,7 @@ export const phonesData = [
     
     { 
         name: "Xiaomi 15t pro ", 
-        tags: ["40","ip","global","material","balans","camers","fastcharge","autonomy","scan"], 
+        tags: ["40","ip","global","material","balans","camers","fastcharge","autonomy"], 
         desc: "Оптика Leica, влагозащита IP68 и сбалансированный софт. Универсальный выбор для качественных фото и видео", 
         characteristics: "Дисплей: 6.83 AMOLED - 1280 x 2772<br>Чип: MediaTek Dimensity 9400 Plus<br>Камера: 3 (50 MP + 50 MP + 12 MP)<br>Батарея: 5500 мАч<br>OS: Android 16<br>Вес: 210 г",
         img: "img/xiaomi15tpro.jpg", 
@@ -235,7 +235,7 @@ export const phonesData = [
     
     { 
         name: "Oppo x9 pro", 
-        tags: ["snap", "65","ip","global","material","camers","balans","fastcharge","autonomy","scan","esim","gps"], 
+        tags: ["65","ip","global","material","camers","balans","fastcharge","autonomy","scan","esim","gps"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1264 x 2780<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 7500 мАч<br>OS: Android 16<br>Вес: 224",
         img: "img/oppox9pro.jpg", 
@@ -245,7 +245,7 @@ export const phonesData = [
 
     { 
         name: "Oppo x9 pro CN", 
-        tags: ["snap", "65","ip","CN","material","camers","balans","fastcharge","autonomy","scan"], 
+        tags: ["65","ip","CN","material","camers","balans","fastcharge","autonomy","scan"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1264 x 2780<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 7500 мАч<br>OS: Android 16<br>Вес: 224",
         img: "img/oppox9pro.jpg", 
@@ -294,7 +294,7 @@ export const phonesData = [
     },
 
     { 
-        name: "Iqoo z11 turbo", 
+        name: "Iqoo z11 turbo CN", 
         tags: ["balans","fastcharge","ip","CN","game","snap"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.59 AMOLED - 1260 x 2750<br>Чип: Qualcomm Snapdragon 8 Gen 5<br>Камера: 2 (200 MP + 8 MP)<br>Батарея: 7600 мАч<br>OS: Android 16<br>Вес: 202",
@@ -415,7 +415,7 @@ export const phonesData = [
 
     { 
         name: "Vivo x300 pro CN", 
-        tags: ["snap","ip","CN","material","camers","balans","fastcharge","autonomy","scan"], 
+        tags: ["ip","CN","material","camers","balans","fastcharge","autonomy","scan"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1260 x 2800<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 6510 мАч<br>OS: Android 16<br>Вес: 226 г",
         img: "img/vivox300pro.jpg", 
@@ -425,7 +425,7 @@ export const phonesData = [
 
     { 
         name: "Vivo x300 pro", 
-        tags: ["snap","ip","global","material","camers","balans","fastcharge","autonomy","scan","gps","esim"], 
+        tags: ["ip","global","material","camers","balans","fastcharge","autonomy","scan","gps","esim"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1260 x 2800<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 6510 мАч<br>OS: Android 16<br>Вес: 226 г",
         img: "img/vivox300pro.jpg", 
@@ -445,7 +445,7 @@ export const phonesData = [
 
     { 
         name: "Samsung s25 ultra", 
-        tags: ["snap","ip","global","material","camers","balans","autonomy","scan","gps","esim"], 
+        tags: ["snap","ip","global","material","camers","balans","scan","gps","esim"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.9 Dynamic AMOLED - 1440 x 3120<br>Чип: Qualcomm Snapdragon 8 Elite<br>Камера: 4 (200 MP + 50 MP + 10 MP + 50 MP)<br>Батарея: 5000 мАч<br>OS: Android 16<br>Вес: 218 г",
         img: "img/SamsungGalaxyS25Ultra.jpg", 
@@ -475,7 +475,7 @@ export const phonesData = [
 
     { 
         name: "Poco x8 pro max", 
-        tags: ["balans", "autonomy","game", "snap", "fastcharge","ip","global","gps","esim","material","scan"], 
+        tags: ["balans", "autonomy","game","fastcharge","ip","global","gps","esim","material"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "исплей: 6.83 AMOLED - 1280 x 2772<br>Чип: MediaTek Dimensity 9500s<br>Камера: 2 (50 MP + 8 MP)<br>Батарея: 8500 мАч<br>OS: Android 16<br>Вес: 218 г",
         img: "img/pocox8pm.jpg", 
@@ -546,7 +546,7 @@ export const phonesData = [
 
     { 
         name: "Motorola moto g100 pro CN", 
-        tags: ["fastcharge","ip","balans","esim","CN"], 
+        tags: ["fastcharge","ip","balans","CN"], 
         desc: "Съемные панели, аксессуары на винтах и легкая Nothing OS. Самый самобытный бюджетник с акцентом на дизайн", 
         characteristics: "Дисплей: 6.7 POLED - 1220 x 2712<br>Чип: MediaTek Dimensity 7300<br>Камера: 2 шт (Основная 50 МП & 8 МП + фронтальная 32 МП)<br>Батарея: 6720 мАч<br>OS: Android 15<br>Вес: 198 г",
         img: "img/motog100pro.jpg", 
@@ -556,7 +556,7 @@ export const phonesData = [
 
     { 
         name: "Motorola moto g55", 
-        tags: ["fastcharge","snap","ip","balans","esim","global","gps"], 
+        tags: ["fastcharge","ip","balans","esim","global","gps"], 
         desc: "Съемные панели, аксессуары на винтах и легкая Nothing OS. Самый самобытный бюджетник с акцентом на дизайн", 
         characteristics: "Дисплей: 6.49 IPS LCD - 1080 x 2400<br>Чип: MediaTek Dimensity 7025<br>Камера: 2 (50 MP + 8 MP)<br>Батарея: 5000 мАч<br>OS: Android 15<br>Вес: 182 г",
         img: "img/moto-g55.jpg", 
@@ -566,7 +566,7 @@ export const phonesData = [
 
     { 
         name: "Nothing phone 3", 
-        tags: ["balans","fastcharge","ip","global","game","snap","esim","gps","material"], 
+        tags: ["balans","fastcharge","ip","global","snap","esim","gps","material"], 
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.67 AMOLED - 1260 x 2800<br>Чип: Qualcomm Snapdragon 8s Gen 4<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 5150 мАч<br>OS: Android 16<br>Вес: 218 г",
         img: "img/nothing_3.jpg", 

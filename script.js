@@ -146,6 +146,7 @@ allsort.forEach(button => {
 let chocetags = ["global"];
 
 
+
 function find() {
     block1.innerHTML = "";
     let count = document.querySelector(".count");
