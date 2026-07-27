@@ -228,7 +228,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1264 x 2780<br>Чип: MediaTek Dimensity 9400e<br>Камера: 3 (50 MP + 50 MP + 8 MP)<br>Батарея: 7000 мАч<br>OS: Android 15<br>Вес: 206",
         img: "img/realmegt7.jpg", 
-        price: "28 000₽",
+        price: "31 812 ₽",
         link: "https://nanoreview.net/ru/phone/realme-gt-7"
     },
     
@@ -248,7 +248,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1264 x 2780<br>Чип: MediaTek Dimensity 9500<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 7500 мАч<br>OS: Android 16<br>Вес: 224",
         img: "img/oppox9pro.jpg", 
-        price: "49 996₽",
+        price: "49 685 ₽ на 18 ИЮЛЯ",
         link: "https://nanoreview.net/ru/phone/oppo-find-x9-pro"
     },
 
@@ -358,7 +358,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.82 AMOLED - 1440 x 3168<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 4 (200 MP + 200 MP + 50 MP + 50 MP)<br>Батарея: 7050 мАч<br>OS: Android 16<br>Вес: 235<br>esim: Только в версии на 1тб",
         img: "img/ч9г.jpg", 
-        price: "91 000₽",
+        price: "71 826₽",
         link: "https://nanoreview.net/ru/phone/oppo-find-x9-ultra"
     }, 
 
@@ -408,7 +408,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.71 OLED - 1256 x 2808<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 7200 мАч<br>OS: Android 16<br>Вес: 219 г",
         img: "img/magic8pro.jpg", 
-        price: "65 397₽",
+        price: "73 636₽",
         link: "https://nanoreview.net/ru/phone/honor-magic-8-pro"
     },
 
@@ -448,7 +448,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.83 AMOLED - 1272 x 2800<br>Чип: Qualcomm Snapdragon 8 Gen 5<br>Камера: 2 (50 MP + 8 MP)<br>Батарея: 7400 мАч<br>OS: Android 16<br>Вес: 214 г",
         img: "img/1+15r.jpg", 
-        price: "32 000₽",
+        price: "31 000₽",
         link: "https://nanoreview.net/ru/phone/oneplus-15r"
     },
 
@@ -488,19 +488,9 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "исплей: 6.83 AMOLED - 1280 x 2772<br>Чип: MediaTek Dimensity 9500s<br>Камера: 2 (50 MP + 8 MP)<br>Батарея: 8500 мАч<br>OS: Android 16<br>Вес: 218 г",
         img: "img/pocox8pm.jpg", 
-        price: "28 454₽",
+        price: "31 149₽",
         link: "https://nanoreview.net/ru/phone/xiaomi-poco-x8-pro-max"
     }, 
-
-    { 
-        name: "Realme 14 pro plus", 
-        tags: ["balans","fastcharge","ip","global","gps","camers"], 
-        desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
-        characteristics: "Дисплей: 6.83 OLED - 1272 x 2800<br>Чип: Qualcomm Snapdragon 7s Gen 3<br>Камера: 3 (50 MP + 50 MP + 8 MP)<br>Батарея: 6000 мАч<br>OS: Android 16<br>Вес: 194 г",
-        img: "img/realme14proplus.jpg", 
-        price: "26 000₽",
-        link: "https://nanoreview.net/ru/phone/realme-14-pro-plus"
-    },    
 
     { 
         name: "Iqoo 15 ultra CN", 
@@ -538,7 +528,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.82 AMOLED - 1440 x 3168<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 4 (200 MP + 200 MP + 50 MP + 50 MP)<br>Батарея: 7050 мАч<br>OS: Android 16<br>Вес: 235 г",
         img: "img/q93_d9405b0e08acb169d2643eab218c77a2425d105681066b81886648a354dca7ea.png", 
-        price: "88 900₽",
+        price: "91 526 ₽ 18 Июля",
         link: "https://nanoreview.net/ru/phone/oppo-find-x9-ultra",
         data: "Апрель 2026 года"
     },
@@ -579,7 +569,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.67 AMOLED - 1260 x 2800<br>Чип: Qualcomm Snapdragon 8s Gen 4<br>Камера: 3 (50 MP + 50 MP + 50 MP)<br>Батарея: 5150 мАч<br>OS: Android 16<br>Вес: 218 г",
         img: "img/nothing_3.jpg", 
-        price: "33 000₽",
+        price: "32 528₽",
         link: "https://nanoreview.net/ru/phone/nothing-phone-3"
     },
 
@@ -619,7 +609,7 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.78 AMOLED - 1272 x 2772<br>Чип: MediaTek Dimensity 8450<br>Камера: 3 (200 MP + 50 MP + 50 MP)<br>Батарея: 6500 мАч<br>OS: Android 16<br>Вес: 205 г",
         img: "img/Oppo_Reno15_Pro.jpg", 
-        price: "35 320₽",
+        price: "37 223 ₽ 18 ИЮЛЯ",
         link: "https://nanoreview.net/ru/phone/oppo-reno-15-pro-max"
     },
 
@@ -652,6 +642,16 @@ export const phonesData = [
         price: "58 684₽",
         link: "https://nanoreview.net/ru/phone/vivo-x200-ultra"
     },
+    
+    { 
+        name: "Realme 16 Pro+", 
+        tags: ["balans","fastcharge","ip","global","gps","camers"], 
+        desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
+        characteristics: "Дисплей: 6.8 OLED - 1280 x 2800<br>Чип: Qualcomm Snapdragon 7 Gen 4<br>Камера: 3 (200 MP + 50 MP + 8 MP)<br>Батарея: 7000 мАч<br>OS: Android 16<br>Вес: 198 г",
+        img: "img/Realme16Pro+.jpg", 
+        price: "28 07₽",
+        link: "https://nanoreview.net/ru/phone/realme-16-pro-plus"
+    }, 
     
 
 
