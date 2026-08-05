@@ -98,11 +98,11 @@ let them = document.getElementById("them");
 let condition = false;
 them.addEventListener("click", function(){
     if (condition == false){
-        header.style.backgroundColor = "#2e3036";
+        header.style.backgroundColor = "black";
         condition = true;
     }
     else{
-        header.style.backgroundColor = "black";
+        header.style.backgroundColor = "#1C1C1E";
         condition = false;
     }
 })
