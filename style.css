@@ -138,7 +138,7 @@ main {
     background-color: #1C1C1E;
     position: fixed;
     z-index: 100;
-    border-right: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    border-right: 1px solid #327493; 
     display:flex;
     flex-direction: column;
 
@@ -147,6 +147,8 @@ main {
 .filtdiv{
     display: flex;
     justify-content: center;
+        padding: 20px 0 0 0;
+        gap: 15px;
 }
 
 main ul{
@@ -155,14 +157,15 @@ main ul{
 }
 
 main li{
-    height: 60px;
-       list-style: none; 
+    margin: 35px;
+    list-style: none; 
+
 }
 
 main a{
-    font-size: 35px;
     text-decoration: none;
-    color: #f0f0f7;
+    color: #4dc3e7;
+    font-size: 40px;
 }
 
 .first_text{
@@ -175,7 +178,7 @@ button{
     width: 240px;
     color: #f0f0f7;
     background: transparent;
-    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    border: 1px solid #327493; 
     text-decoration: none;
     outline: none;
     border-radius: 18px ;
@@ -271,15 +274,6 @@ select:hover{
     filter: brightness(1.2); /* Легкое осветление при наведении */
 }
 
-option:hover{
-  background-color: blue;
-  cursor: pointer;
-}
-
-.price{
-font-size: 35px;
-}
-
 .buttons {
     display: flex;
     flex-wrap: wrap;    /* Позволяет кнопкам перепрыгивать на новую строку */
@@ -292,32 +286,37 @@ font-size: 35px;
 
 
 .phone_card {
-    display: flex;         /* Выстраивает картинку и инфо-блок в ряд */
-    gap: 20px;             /* Расстояние между картинкой и текстом */
+display: flex;
+    gap: 20px;
     background: #fff;
-    padding: 15px;
-    border-radius: 18px;
-    margin-bottom: 15px; 
-    max-width: 1100px;       /*  эти 2 свойства в комбенации уберают края */
-    margin: 15px auto;           /*  эти 2 свойства в комбенации уберают края */
-    color: #f0f0f7;
-    /* background-color: #415f91; */    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
-    font-size: 25px;
-    animation: fadeIn 0.5s ease forwards; 
+    padding: 20px;
+    border-radius: 60px;
+    max-width: 1150px;
+    margin: 20px auto;
+    border: 1px solid #327493;
+    animation: fadeIn 0.5s ease forwards;
     background-color: transparent;
 }
 
+.price, .data{
+    color: #4dc3e7;
+    font-size: 30px;
+}
+
+
 .startfind{
-    background: #327493;
-    max-width: 45%;
-    margin: 20px auto;
+    border: 3px solid #327493;
+    width: 26%;
+    margin: 30px auto;
     border-radius: 18px;
-    padding: 25px;
+    padding: 18px 0 25px 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    color: #f0f0f7;
-    align-items: center;   
+    align-items: center;
+}
+
+.start_a{
+    color:#4dc3e7;
     font-size: 30px;
 }
 
@@ -332,20 +331,29 @@ font-size: 35px;
 }
 
 .bnavf label{
-    font-size: 25px;
+    font-size: 22px;
     color: #f0f0f7;
     cursor: pointer;
-    padding: 15px;
-    padding-bottom: 20px;
+    margin: 30px;
+}
+
+.card_filtrs {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 5px;           
+    margin: 6px 0 10px 3px; 
 }
 
 
-
-
-
-
-
-
+.card_tag {
+    font-size:20px;         
+    color:#f0f0f7 ;             
+    background-color: transparent;  
+    border: 1px solid #327493;   
+    padding: 2px 6px;            
+    border-radius: 9px;         
+    white-space: nowrap;         
+}
 
 @keyframes fadeIn {
     0% {
@@ -359,20 +367,21 @@ font-size: 35px;
 }
 
 .phone_img {
-    max-width: 600px;          /* Фиксируем ширину картинки */
+    max-width: 600px;    
     max-height: 550px;
-    border-radius: 18px;
+    border-radius: 60px;
 }
 
 .phone_info {
     display: flex;
-    flex-direction: column; /* Внутри этого блока всё идет сверху вниз */
-    gap: 10px;             /* Расстояние между H3 и будущим текстом */
+    flex-direction: column; 
+    gap: 10px;           
 }
 
 .phone_info h3 {
-    margin: 0;             /* Убираем лишние отступы у заголовка */
-    font-size: 30px;
+    margin: 0; 
+    font-size: 32px;
+    color: #f0f0f7;
 }
 
 
@@ -386,19 +395,19 @@ font-size: 35px;
     border-radius: 18px;
     height: auto;
         background: transparent;
-    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    border: 1px solid #327493;
 }
 
 .costdiv{
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
-    background-color: #327493;
     margin: 15px auto;
-    width: 80%;
+    width: 50%;
     border-radius: 18px;
         background: transparent;
-    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    border: 1px solid #327493;
+        padding: 0 20px 0 20px;
 }
 
 .cost{
@@ -408,7 +417,7 @@ background-color: #1C1C1E;
     margin: auto;
     cursor: pointer;
     margin-bottom: 10px;
-    color: #327493; /* Тонкая рамка вместо заливки */
+    color: #327493;
 }
 
 .costspan{
@@ -419,31 +428,35 @@ background-color: #1C1C1E;
 }
 
 .site_info, .site_info2 {
-    width: 1000px;
-    max-width: 95%; 
+    width: 45%;
     margin: 20px auto;
-    padding: 30px; 
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
+    padding: 20px 0 30px 0;
     color: #f0f0f7;
-    background: rgba(255, 255, 255, 0.03); /* Почти прозрачный фон */
-    border: 1px solid #327493; /* Тонкая рамка вместо заливки */
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #327493;
     border-radius: 18px;
 }
-
+.site_info2 {    display: none;}
 
 h1, h2{
     margin: 0 auto;
     text-align: center;
 }
 
-h1 { 
-    font-size: 45px; 
-    color: #f0f0f7; 
+.swiper_h2{
+    text-align: center;
+    color: #4dc3e7;
+    width: 250px;
+    height: 50px;
+    border:1px solid #327493;
+    border-radius: 9px;
 }
 
-h2 { 
+h1 { 
+    font-size: 35px; 
+}
+
+h4 { 
     font-size: 30px; 
     padding-bottom: 10px; 
 }
@@ -502,7 +515,9 @@ h2 {
 }
 
 .description{
-    color: #d0d0d8;
+    color: #dcdce3;
+    font-size: 24px;
+    line-height: 35px;
 }
 
 .sendbutton{
@@ -512,7 +527,7 @@ h2 {
 /* Контейнер кнопки для позиционирования */
 .filter-btn {
     position: relative;
-    padding-right: 35px !important; /* Освобождаем место под знак вопроса */
+    padding-right: 10px;
 }
 
 /* Иконка вопроса */
@@ -588,12 +603,161 @@ h2 {
     background-position: center;
     height: 50px;
     width: 50px;
-    border-radius: 15px;
+    border-radius: 14px;
 }
 
 footer{
     display: none;
 }
+
+/* 1. Главная большая подложка для всего раздела скидок */
+.discount_section {
+    width: 100%;
+    max-width: 850px; /* Фиксируем идеальную ширину под размер карточек */
+    margin: 40px auto;
+    padding: 30px;
+    background: #1c1c1e; /* Темный благородный фон, чуть светлее основного */
+    border: 1px solid #327493; /* Тонкая аккуратная рамка */
+    border-radius: 24px; /* Красивые скругленные углы */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* 2. Оформление заголовков */
+.discount_header {
+    margin-bottom: 25px;
+    border-left: 4px solid #327493; /* Стильная синяя вертикальная полоса слева от текста */
+    padding-left: 15px;
+}
+
+.discount_title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.5px;
+}
+
+.discount_subtitle {
+    color: #718096; /* Приглушенный серый цвет для описания */
+    font-size: 14px;
+    margin: 0;
+}
+
+/* 3. Контейнер для карточек телефонов */
+.pure_slider_container {
+    display: flex !important;
+    flex-direction: column !important; /* Строго вертикально друг под другом */
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+/* 4. Сама карточка смартфона (Превращаем в горизонтальный шедевр) */
+.phone_card_slide {
+    display: flex !important;
+    flex-direction: row !important; /* Картинка слева, текст справа */
+    width: 100% !important;
+    height: 280px !important; /* Компактная фиксированная высота, чтобы карточка не была огромной */
+    background: #121214 !important; /* Глубокий черный фон самой карточки для контраста */
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-sizing: border-box;
+    
+    /* Плавность для будущей анимации */
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease !important;
+}
+
+/* 🚀 КРУТАЯ АНИМАЦИЯ: Эффект перемещения и объема при наведении */
+.phone_card_slide:hover {
+    transform: translateY(-4px) scale(1.005) !important; /* Карточка плавно приподнимается вверх */
+    border-color: #327493 !important; /* Рамка окрашивается в ваш синий цвет */
+    box-shadow: 0 10px 25px rgba(50, 116, 147, 0.15) !important; /* Мягкое неоновое свечение */
+}
+
+/* Картинка внутри карточки */
+.phone_card_slide .phone_img {
+    width: 35% !important; /* Компактное выделение под фото */
+    height: 100% !important;
+    object-fit: contain !important;
+    padding: 15px !important;
+    background: #18181c; /* Слегка выделяем зону подложки картинки */
+}
+
+/* Правая текстовая часть информации */
+.phone_card_slide .phone_info {
+    width: 65% !important;
+    height: 100% !important;
+    padding: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-sizing: border-box;
+}
+
+/* Название смартфона внутри карточки */
+.phone_card_slide .phone_info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 4px 0;
+}
+
+.more_info_btn2{
+    align-self: flex-start;
+    background: #327493;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 12px 0;
+    transition: background 0.2s ease;
+}
+ .more_info_btn2:hover {
+    background: #255870; /* При наведении кнопка становится чуть темнее */
+}
+
+.more_info_btn {
+    align-self: flex-start;
+    background: #327493;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    transition: background 0.2s ease;
+}
+.phone_card_slide .more_info_btn:hover {
+    background: #255870; /* При наведении кнопка становится чуть темнее */
+}
+
+/* Характеристики прячем под аккуратный внутренний скролл, чтобы они не раздували карточку */
+.phone_card_slide .description {
+    color: #a0aec0;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    overflow-y: auto; /* Внутренний скролл для длинного текста */
+    flex-grow: 1;
+}
+
+/* Тонкий красивый скроллбар для характеристик */
+.phone_card_slide .description::-webkit-scrollbar {
+    width: 4px;
+}
+.phone_card_slide .description::-webkit-scrollbar-thumb {
+    background: #2d3748;
+    border-radius: 4px;
+}
+
+
+
+
+
 
 
 
@@ -626,7 +790,7 @@ footer{
         display: none;
     }
     .costdiv{
-        width: 95%;
+        width: 80%;
     }
 
     header a{
@@ -660,7 +824,7 @@ footer{
 }
 
 .startfind{
-    width: 80%;
+    width: 65%;
 }
 
 .startfind a{
@@ -676,20 +840,24 @@ footer{
 }
 .phone_card {        
     max-width: 80%;       
-    border-radius: 18px;
+    border-radius: 26px;
     display: flex;
     flex-direction: column; 
-    margin: 5px auto;
 }
 
 .phone_img {
     width: 100%;
     height: 250px;
-    object-fit: cover;      /* Картинка заполняет верхнюю часть */
+    object-fit: cover;      
+    border-radius: 26px;
 }
 
 .phone_info {
-    padding: 15px;
+    gap: 0;
+}
+
+#allfilt{
+    width: 75%;
 }
 
 header nav{
@@ -742,5 +910,22 @@ header nav{
         margin-left: 0 !important;
     }
 
+    .discount_header {
+    margin-top: 10px;
+    border-left: 0;
+    padding-left: 15px;
+}
+
+    .discount_section {
+    width: 95%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 5px;
+    background: #1c1c1e;
+    border: 1px solid #327493;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
 
 }

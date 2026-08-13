@@ -34,17 +34,9 @@
 
         </div>
 
+git config --global user.name "artemik" 
+git config --global user.email "afedorenko10@mail.ru"
 
-<div class="costdiv">
-    <div class="range-values">
-        <span id="min-price">10000 ₽</span> — <span id="max-price">100000 ₽</span>
-    </div>
-    <div class="range-container">
-        <div class="slider-track"></div>
-        <input type="range" class="cost min-range" min="10000" max="100000" value="10000" step="5000">
-        <input type="range" class="cost max-range" min="10000" max="100000" value="100000" step="5000">
-    </div>
-</div>
 
     <div class="filtdiv">
     <button  id="allfilt">Убрать кнопки</button>
@@ -63,6 +55,18 @@
 
     </button>
     </div>
+    
+    <div class="costdiv">
+    <div class="range-values">
+        <span id="min-price">10000₽</span> — <span id="max-price">100000₽</span>
+    </div>
+    <div class="range-container">
+        <div class="slider-track"></div>
+        <input type="range" class="cost min-range" min="10000" max="100000" value="10000" step="5000">
+        <input type="range" class="cost max-range" min="10000" max="100000" value="100000" step="5000">
+    </div>
+</div>
+
     <div class="buttons">
     <select name="bace" class="bace">
     <option value="">Основное использование</option> 
@@ -74,14 +78,14 @@
     </select>
 
     
-        <button class="filter-btn" data-tag="CN">китайская версия</button>  
-        <button class="filter-btn" data-tag="fastcharge">быстрая зарядка</button>
-        <button class="filter-btn" data-tag="compact">компакт</button>
-        <button class="filter-btn" data-tag="ip">влагозащита</button>
-        <button class="filter-btn" data-tag="material">материалы</button>
-        <button class="filter-btn" data-tag="scan">ультразвук</button>
-        <button class="filter-btn" data-tag="esim">esim</button>     
-        <button class="filter-btn" data-tag="snap">snapdragon</button>
+        <button class="filter-btn" data-tag="CN">CN версия</button>  
+        <button class="filter-btn" data-tag="fastcharge">Fast Charge</button>
+        <button class="filter-btn" data-tag="compact">Compact</button>
+        <button class="filter-btn" data-tag="ip">IP</button>
+        <button class="filter-btn" data-tag="material">Material</button>
+        <button class="filter-btn" data-tag="scan">Scan</button>
+        <button class="filter-btn" data-tag="esim">Esim</button>     
+        <button class="filter-btn" data-tag="snap">Snap</button>
 
 
 
@@ -100,7 +104,7 @@
 
 
 </body>
-<script type="module" src="script.js"></script>
+<script type="module" src="find.js"></script>
 
 </html>
 
