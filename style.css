@@ -18,7 +18,7 @@ body{
     min-height: 100vh; /* Растягивает body на всю высоту экрана */
     margin: 0;
     /* background: radial-gradient(circle, #acacff, #7878f4); */
-    background-color: #1C1F1F;
+    background-color: #13131a;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
     justify-content: space-around;
     align-items: center; /* Центрирует элементы по вертикали внутри 80px */
     border-bottom: 1px solid #327493; /* Тонкая рамка вместо заливки */
-    background-color: #1C1C1E;
+    background-color: #13131a;
     height: 90px;
     position: fixed;
     top: 0;       /* Прижать к самому верху */
@@ -118,7 +118,7 @@ main {
     width: 250px;
     transition: 0.4s ease;
     transform: translateX(0px); 
-    background-color: #1C1C1E;
+    background-color: #13131a;
     position: fixed;
     z-index: 100;
     border-right: 1px solid #327493; /* Тонкая рамка вместо заливки */
@@ -135,7 +135,7 @@ main {
     width: 250px;
     transition: 0.4s ease;
     transform: translateX(0px); 
-    background-color: #1C1C1E;
+    background-color: #13131a;
     position: fixed;
     z-index: 100;
     border-right: 1px solid #327493; 
@@ -215,7 +215,7 @@ select {
 }
 
 .bace option {
-    background-color: #1C1C1E;
+    background-color: #13131a;
     color: #f0f0f7;
 }
 
@@ -309,7 +309,7 @@ display: flex;
     width: 26%;
     margin: 30px auto;
     border-radius: 18px;
-    padding: 18px 0 25px 0;
+    padding: 18px 0 18px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,7 +411,7 @@ display: flex;
 }
 
 .cost{
-background-color: #1C1C1E;
+background-color: #13131a;
     color: #f0f0f7;
     width: 90%;
     margin: auto;
@@ -432,8 +432,6 @@ background-color: #1C1C1E;
     margin: 20px auto;
     padding: 20px 0 30px 0;
     color: #f0f0f7;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid #327493;
     border-radius: 18px;
 }
 .site_info2 {    display: none;}
@@ -453,7 +451,7 @@ h1, h2{
 }
 
 h1 { 
-    font-size: 35px; 
+    font-size: 32px; 
 }
 
 h4 { 
@@ -501,7 +499,7 @@ h4 {
     text-align: center;
     height: auto;
          border-top: 1px solid #327493; /* Тонкая рамка вместо заливки */    
-        background-color: #1C1C1E;
+        background-color: #13131a;
 }
 
 .formlbl{
@@ -557,7 +555,7 @@ h4 {
     visibility: hidden;
     opacity: 0;
     width: 180px;
-    background: #1C1C1E;
+    background: #13131a;
     color: #fff;
     text-align: center;
     border: 1px solid #327493;
@@ -616,7 +614,7 @@ footer{
     max-width: 850px; /* Фиксируем идеальную ширину под размер карточек */
     margin: 40px auto;
     padding: 30px;
-    background: #1c1c1e; /* Темный благородный фон, чуть светлее основного */
+    background: #13131a; /* Темный благородный фон, чуть светлее основного */
     border: 1px solid #327493; /* Тонкая аккуратная рамка */
     border-radius: 24px; /* Красивые скругленные углы */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -690,10 +688,10 @@ footer{
 .phone_card_slide .phone_info {
     width: 65% !important;
     height: 100% !important;
-    padding: 20px !important;
     display: flex !important;
     flex-direction: column !important;
     box-sizing: border-box;
+    padding: 10px 10px 0 10px;
 }
 
 /* Название смартфона внутри карточки */
@@ -758,25 +756,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 480px){
     
     .bnavf.active {
@@ -824,7 +803,7 @@ footer{
 }
 
 .startfind{
-    width: 65%;
+    width: 50%;
 }
 
 .startfind a{
@@ -921,11 +900,22 @@ header nav{
     max-width: 850px;
     margin: 40px auto;
     padding: 5px;
-    background: #1c1c1e;
+    background: #13131a;
     border: 1px solid #327493;
     border-radius: 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
+
+.phone_card_slide {
+    display: flex !important;
+    flex-direction: row !important;
+    height: 280px !important;
+    background: #121214 !important;
+    border: 1px solid rgba(255, 255, 255, 0.03) !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-sizing: border-box;
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease !important;
 
 }

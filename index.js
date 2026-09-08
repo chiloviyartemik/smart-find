@@ -52,8 +52,6 @@ function initSaleSlider() {
                     <div class="card_filtrs">
                         ${tagsHtml}
                     </div>
-                    <a href="${phone.link}" class="more_info_btn">Подробнее</a>
-
                 </div>
             </div>`;
     }).join("");
