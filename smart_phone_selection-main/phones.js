@@ -410,8 +410,9 @@ export const phonesData = [
         desc: "Прекрасный баланс, супер ОС, лучший в своем бюджете", 
         characteristics: "Дисплей: 6.71 OLED - 1256 x 2808<br>Чип: Qualcomm Snapdragon 8 Elite Gen 5<br>Камера: 3 (50 MP + 200 MP + 50 MP)<br>Батарея: 7200 мАч<br>OS: Android 16<br>Вес: 219 г",
         img: "img/magic8pro.jpg", 
-        price: "70 000₽",
-        link: "https://nanoreview.net/ru/phone/honor-magic-8-pro"
+        price: "77 986 ₽",
+        link: "https://nanoreview.net/ru/phone/honor-magic-8-pro",
+        date:"11.09.26"
     },
 
     { 
@@ -545,15 +546,6 @@ export const phonesData = [
         data: "Апрель 2026 года"
     },
 
-        {  
-        name: "Vivo v70", 
-        tags: ["30", "fastcharge", "ip","balans","camers","global","esim","gps","snap"], 
-        desc: "Оптика Leica, влагозащита IP68 и сбалансированный софт. Универсальный выбор для качественных фото и видео",
-        characteristics: "Дисплей: 6.32 AMOLED - 1216 x 2640<br>Чип: MediaTek Dimensity 8450<br>Камера: 3 (200 MP + 50 MP + 50 MP)<br>Батарея: 6200 мАч<br>OS: Android 16<br>Вес: 187 г", 
-        img: "img/OppoReno15Pro.jpg", 
-        price: "32000₽",
-        link: "https://nanoreview.net/ru/phone/oppo-reno-15-pro"
-    },    
 
     {  
         name: "Realme gt 8 pro", 

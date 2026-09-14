@@ -37,7 +37,6 @@ header {
 }
 
 li:hover {
-    /* Цвет фона с прозрачностью 0.1, который НЕ влияет на текст */
     background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 18px;
 }
@@ -107,41 +106,25 @@ main {
 }
 
 
-.bnav{
-    position: fixed;
-    transform: translateX(-290px);    
-    z-index: 100;
-}
 
-.bnav.active{
-    height: 100%;
-    width: 250px;
-    transition: 0.4s ease;
-    transform: translateX(0px); 
-    background-color: #13131a;
-    position: fixed;
-    z-index: 100;
-    border-right: 1px solid #327493; /* Тонкая рамка вместо заливки */
-}
 
 .bnavf{
     position: fixed;
-    transform: translateY(990px);    
+    transform: translateX(-550px);    
     z-index: 100;
 }
 
 .bnavf.active{
-    height: 100%;
-    width: 250px;
-    transition: 0.4s ease;
-    transform: translateX(0px); 
-    background-color: #13131a;
+    height: 95vh;
+    width: 300px;
+    transition: 0.3s ease;
+    transform: translateX(0px);
     position: fixed;
-    z-index: 100;
-    border-right: 1px solid #327493; 
-    display:flex;
+    border-right: 1px solid #327493;
+    display: flex;
     flex-direction: column;
-
+    background: rgba(15, 23, 31, 0.80);
+    backdrop-filter: blur(12px);
 }
 
 .filtdiv{
@@ -154,12 +137,6 @@ main {
 main ul{
     margin-top: 20px;
     margin-left: 40px;
-}
-
-main li{
-    margin: 35px;
-    list-style: none; 
-
 }
 
 main a{
@@ -331,10 +308,11 @@ display: flex;
 }
 
 .bnavf label{
-    font-size: 22px;
+    padding-left: 30px;
+    font-size: 30px;
     color: #f0f0f7;
     cursor: pointer;
-    margin: 30px;
+    margin-top: 30px;
 }
 
 .card_filtrs {
@@ -752,19 +730,72 @@ footer{
     border-radius: 4px;
 }
 
+/*  Контейнер шторки меню при открытии */
+
+.bnav{
+    position: fixed;
+    transform: translateX(-290px);    
+    z-index: 100;
+}
+
+.bnav.active {
+    display: flex !important;      /* Включаем Flexbox для выравнивания */
+    flex-direction: column;
+    align-items: center;          /* Центрируем ссылки по горизонтали */
+    position: fixed;              /* Фиксируем поверх всего сайта */
+    top: 91px;
+    left: 0;
+    width: 300px;
+    height: 95vh;
+        transform: translateX(0px);
+    transition: 0.4s ease;
+    border-right: 1px solid #327493;  
+    background: rgba(15, 23, 31, 0.80); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 999;                 
+    animation: fadeInMenu 0.25s ease-out forwards;
+    animation: fadeInMenu 0.25s ease-out forwards;
+}
+
+/* 2. Сброс отступов у списка */
+.bnav.active ul {
+    width: 100%;
+    margin: 0;
+
+}
+
+/* 3. Пункты меню (Главная, Подбор) */
+.bnav.active li {
+    margin: 30px 0;               /* Оптимальный отступ для нажатия пальцем на смартфоне */
+    opacity: 0;
+    animation: fadeInUpItems 0.3s ease-out forwards;
+}
+
+.at{
+    color: #f0f0f7;
+    padding-left: 30px;
+
+}
+
+/* --- АНИМАЦИИ --- */
+@keyframes fadeInMenu {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUpItems {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
 
 @media (max-width: 480px){
-    
-    .bnavf.active {
-        bottom: 0;
-        width: 100%;
-        height: auto;
-        border-radius: 15px 15px 0 0;
-        border-top: 1px solid #577495;
-    }
+    li:hover {background-color: rgba(255, 255, 255, 0);}
     ._a{
         display: none;
     }
@@ -787,11 +818,38 @@ footer{
 .bnav.active{
     width: 100%;
 }
+.bnav.active li{
+width: 100%;
+        margin-left: 28%;
+        margin-top: 100px;
+        font-size: 45px;
+        list-style: none;
+}
+.bnavf{
+    position: fixed;
+    transform: translateY(1500px);    
+    z-index: 100;
+}
 
-.at{
-    margin-bottom: 15px;
-    font-size: 40px;
-    width: 100%;
+.bnavf.active{
+    height: 300px;
+    position: fixed;              
+    bottom: 0;                    
+    left: 0;
+    width: 100%;  
+    transform: translateY(0);     
+    transition: transform 0.4s ;
+    border-radius:  24px  24px 0  0 ;
+    backdrop-filter: blur(12px);
+    border-top: 1px solid #327493;
+}
+
+.bnavf label{
+    padding-left: 23%;
+    font-size: 30px;
+    color: #f0f0f7;
+    cursor: pointer;
+    margin-top: 65px;
 }
 
 .formlbl{
@@ -900,10 +958,8 @@ header nav{
     max-width: 850px;
     margin: 40px auto;
     padding: 5px;
-    background: #13131a;
     border: 1px solid #327493;
     border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
 
@@ -911,11 +967,10 @@ header nav{
     display: flex !important;
     flex-direction: row !important;
     height: 280px !important;
-    background: #121214 !important;
-    border: 1px solid rgba(255, 255, 255, 0.03) !important;
     border-radius: 16px !important;
     overflow: hidden !important;
     box-sizing: border-box;
     transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.3s ease, box-shadow 0.3s ease !important;
 
+}
 }

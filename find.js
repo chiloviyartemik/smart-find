@@ -14,7 +14,7 @@ const tagDescriptions = {
     "game": "Игровые модели с мощным охлаждением и высокой герцовкой экрана.",
     "material":"смартфоны из премиальных материалов",
     "scan":"ультразвуковой сканер отпечатка пальцев расположен высоко и быстор работает",  
-      
+     "tp": "телевик, камера больне чем x2",
 };
 
 function initHints() {
@@ -181,8 +181,7 @@ function find() {
 
         let isCategoryMatch = (selectedCategory === "" || phone.tags.includes(selectedCategory));
 
-
-
+        
         if (phonePrice >= minCost && phonePrice <= maxCost && isMatch && isCategoryMatch) {
             xcount += 1;
                     let tagsHtml = phone.tags.map(tag => `<span class="card_tag">${shortTagNames[tag] || tag}</span>`).join(""); 
