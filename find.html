@@ -9,9 +9,9 @@
 <body>
     <header>
             <div class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="bspan"></span>
+            <span class="bspan"></span>
+            <span class="bspan"></span>
         </div>
         <nav>
             <ul>
@@ -19,7 +19,11 @@
                 <li><a href="find.html">Подбор</a></li>
             </ul>
         </nav>
-    <input type="checkbox" id = 'them'>
+    <label class="theme-switch">
+    <input type="checkbox" id="theme-checkbox">
+    <span id="them" class="switch-icon"></span>
+</label>
+
     </header>
     <main>
         <nav class="bnav">
@@ -65,7 +69,7 @@
 </div>
 
     <div class="buttons">
-    <select name="bace" class="bace">
+    <select>
     <option value="">Основное использование</option> 
     <option value="balans">Баланс</option>
     <option value="autonomy">Автономность</option>

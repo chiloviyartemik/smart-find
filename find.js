@@ -89,20 +89,50 @@ function burger() {
 
 
 console.log(phonesData);
+let select = document.querySelector("select");
+
 
 let header = document.querySelector("header");
-let them = document.getElementById("them");
-let condition = false;
-them.addEventListener("click", function(){
-    if (condition == false){
-        header.style.backgroundColor = "black";
-        condition = true;
+let them = document.getElementById("them"); // Это ваш span/иконка
+let checkbox = document.getElementById("theme-checkbox"); // Сам скрытый input[type="checkbox"]
+
+// Функция применения темы
+function applyTheme(isWhite) {
+    if (isWhite) {
+        document.body.classList.add("white-theme");
+        if (header) header.classList.add("white-theme");
+        // Добавьте сюда остальные переключения классов, если нужно
+    } else {
+        document.body.classList.remove("white-theme");
+        if (header) header.classList.remove("white-theme");
     }
-    else{
-        header.style.backgroundColor = "#1C1C1E";
-        condition = false;
-    }
-})
+}
+
+// 1. ПРОВЕРКА ПРИ ЗАГРУЗКЕ САЙТА
+// Смотрим, что было сохранено в памяти браузера ранее
+let savedTheme = localStorage.getItem("isWhiteTheme");
+if (savedTheme === "true") {
+    if (checkbox) checkbox.checked = true;
+    applyTheme(true);
+} else {
+    if (checkbox) checkbox.checked = false;
+    applyTheme(false);
+}
+
+// 2. СОХРАНЕНИЕ ПРИ КЛИКЕ / ИЗМЕНЕНИИ
+if (checkbox) {
+    checkbox.addEventListener("change", function() {
+        if (checkbox.checked) {
+            localStorage.setItem("isWhiteTheme", "true");
+            applyTheme(true);
+        } else {
+            localStorage.setItem("isWhiteTheme", "false");
+            applyTheme(false);
+        }
+    });
+}
+
+
 
 
 let bace = [];
@@ -270,7 +300,7 @@ sliderMin.addEventListener("input", updateSlider);
 sliderMax.addEventListener("input", updateSliderMax);
 
 
-let selectFilter = document.querySelector(".bace"); 
+let selectFilter = document.querySelector("select"); 
 let selectedCategory = "";
 if (selectFilter) {
     selectFilter.addEventListener("change", function() {
@@ -282,7 +312,6 @@ if (selectFilter) {
 
 // 1. Находим ВСЕ кнопки с классом filter-btn
 let allFilterBtns = document.querySelectorAll(".filter-btn");
-let select = document.querySelector("select");
 // 2. Запускаем цикл по этой коллекции кнопок
 allFilterBtns.forEach(btn => {
     // Вешаем клик на каждую кнопку сразу
